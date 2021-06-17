@@ -1,0 +1,86 @@
+#menu li{
+    display: inline;
+    padding: 20px;
+}
+
+#menu li a{
+    text-decoration: none;
+}
+
+#menu li a:hover{
+    color: #000000;
+}
+
+.albumHeader{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.albumHeaderPhoto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.bgHeaderImage{
+    position: relative;
+}
+
+.bgHeaderImage::after{
+    content : "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+    
+    background: url('../imgs/bg_header.jpg') center center no-repeat; 
+}
+
+.bgColor{
+    background-color: #e7e6e7;
+}
+
+.bgContainer{
+    background-color: #ffffff;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.leftText{
+    text-align: left;
+}
+
+.topMargin30{
+    margin-top: 30px;
+}
+
+.letraContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.pad30{
+    padding: 30px;
+}
+
+.tamanho40{
+    width: 40px;
+    height: 40px;
+}
+
+.bgColorHome{
+    background-color: #f7eacd;
+}
+
+.sobreContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
