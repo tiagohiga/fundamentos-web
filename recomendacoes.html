@@ -35,36 +35,40 @@
         <h2>Deixe sua recomendação no formulário abaixo</h2>
         <form>
             <label for="email">E-mail:</label><br>
-            <input type="email" name="email">
-            <br>
+            <input type="email" id="email" onkeyup='validaEmail()'>
+            <div id="txtEmail"></div>
             <br>
             <label for="artista">Nome do Artista:</label><br>
-            <input type="text" name="artista">
-            <br>
+            <input type="text" id="artista" onkeyup="validaArtista()">
+            <div id="txtArtista"></div>
             <br>
             <label for="musica">Nome da Música:</label><br>
-            <input type="text" name="musica">
-            <br>
+            <input type="text" id="musica" onkeyup="validaMusica()">
+            <div id="txtMusica"></div>
             <br>
             <label for="motivo">Motivo da Indicação:</label>
             <br>
-            <textarea name="motivo" cols="45" rows="10"></textarea>
+            <textarea name="motivo" id="motivo" cols="45" rows="10" onkeyup="validaMotivo()"></textarea>
+            <div id="txtMotivo"></div>
         </form>
         <br>
-        <button class="botaoForm">Enviar</button>
+        <button class="botaoForm" onclick="enviarForm()">Enviar</button>
     </div>
 
     <div class="finalPag"></div>
     <footer>
         <div class="letraContainer">
             <a href="https://github.com/tiagohiga" target="_blank">
-                <img class="tamanho40 marginFooter" src="assets/imgs/logotipo-do-github.png" alt="Logo do GitHub">
+                <img class="tamanho40 marginFooter imgOpacity" src="assets/imgs/logotipo-do-github.png"
+                    alt="Logo do GitHub">
             </a>
             <a href="https://www.linkedin.com/in/tiagohiga/" target="_blank">
-                <img class="tamanho40 marginFooter" src="assets/imgs/logotipo-linkedin.png" alt="Logo do Linkedin">
+                <img class="tamanho40 marginFooter imgOpacity" src="assets/imgs/logotipo-linkedin.png"
+                    alt="Logo do Linkedin">
             </a>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
