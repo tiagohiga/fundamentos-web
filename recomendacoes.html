@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 
     <link rel="stylesheet" href="assets/style/styles.css">
 </head>
+
 <body>
     <div>
         <ul id="menu">
@@ -28,33 +30,41 @@
             </li>
         </ul>
     </div>
-    <h1>Recomendações Musicais</h1>
-    <h2>Deixe sua recomendação no formulário abaixo</h2>
-    <form>
-        <label for="email">E-mail:</label><br>
-        <input type="email" name="email">
+    <div class="formContainer pad30">
+        <h1>Recomendações Musicais</h1>
+        <h2>Deixe sua recomendação no formulário abaixo</h2>
+        <form>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email">
+            <br>
+            <br>
+            <label for="artista">Nome do Artista:</label><br>
+            <input type="text" name="artista">
+            <br>
+            <br>
+            <label for="musica">Nome da Música:</label><br>
+            <input type="text" name="musica">
+            <br>
+            <br>
+            <label for="motivo">Motivo da Indicação:</label>
+            <br>
+            <textarea name="motivo" cols="45" rows="10"></textarea>
+        </form>
         <br>
-        <br>
-        <label for="artista">Nome do Artista:</label><br>
-        <input type="text" name="artista">
-        <br>
-        <br>
-        <label for="musica">Nome da Música:</label><br>
-        <input type="text" name="musica">
-        <br>
-        <br>
-        <label for="motivo">Motivo da Indicação:</label>
-        <br>
-        <textarea name="motivo" cols="45" rows="10"></textarea>
-    </form>
-    <br>
-    <button>Enviar</button>
+        <button class="botaoForm">Enviar</button>
+    </div>
 
-    <hr>
+    <div class="finalPag"></div>
     <footer>
-        <a href="https://github.com/tiagohiga" target="_blank">
-            <img class="tamanho40" src="assets/imgs/logotipo-do-github.png" alt="Logo do GitHub">
-        </a>
+        <div class="letraContainer">
+            <a href="https://github.com/tiagohiga" target="_blank">
+                <img class="tamanho40 marginFooter" src="assets/imgs/logotipo-do-github.png" alt="Logo do GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/tiagohiga/" target="_blank">
+                <img class="tamanho40 marginFooter" src="assets/imgs/logotipo-linkedin.png" alt="Logo do Linkedin">
+            </a>
+        </div>
     </footer>
 </body>
+
 </html>
